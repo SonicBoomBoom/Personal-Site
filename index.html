@@ -10,67 +10,76 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="man.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
   <title>Avick Saha</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/man.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <section id="title">
 
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <!-- Navbar content -->
-    <a class="navbar-brand" href="#">Avick Saha</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Skills</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#">Home</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <!-- Navbar content -->
 
-  <div class="top-container">
+      <!-- Image and text -->
+      <a class="navbar-brand" href="#"><img src="images/nav-img.png" width="30" height="30" alt=""> Avick Saha</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#skills-section">Skills</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <div id="home" class="top-container">
     <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
     <h1><span class="first-letter">I'</span>m</h1>
     <h1><span class="first-letter">A</span>vick</h1>
     <h2 style="margin-top: 0;">I'm a Programmer</h2>
     <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-    <img src="images/mountain.png" alt="mountain-img">
+    <img class="mountain" src="images/mountain.png" alt="mountain-img">
   </div>
   <div class="middle-container">
     <div class="profile">
       <img class="programmer-img" src="images/programmer.png" alt="">
       <h2>Hi,</h2>
-      <p class="intro">I'm a web designer / developer based in India. I have a passion for web design and love to create web apps.</p>
+      <p class="profile-description">I'm a web designer / developer based in India. I have a passion for web design and love to create web apps.</p>
     </div>
     <hr>
     <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="computer-img" src="images/computer.png" alt="">
-        <h3>Design & Development</h3>
-        <p>I started learning to code when I was 15 years old because I wanted to help people through technolgy. Over the time, I've gained a wealth of experience designing and developing mobile and web apps.</p>
+      <div id="skills-section">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class="computer-img" src="images/computer.png" alt="" style="padding-top: 0.5rem;">
+          <h3>Design & Development</h3>
+          <p>I started learning to code when I was 15 years old because I wanted to help people through technolgy. Over the time, I've gained a wealth of experience designing and developing mobile and web apps.</p>
+        </div>
+        <div class="skill-row">
+          <img class="chillies-img" src="images/chillies.png" alt="">
+          <h3>Maggie Challenge</h3>
+          <p>But my best skill is actually in eating Maggie. I'm the undisputed king of it, yet I like to eat all kind of noodles</p>
+        </div>
       </div>
-      <div class="skill-row">
-        <img class="chillies-img" src="images/chillies.png" alt="">
-        <h3>Maggie Challenge</h3>
-        <p>But my best skill is actually in eating Maggie. I'm the undisputed king of it, yet I like to eat all kind of noodles</p>
-      </div>
+      <hr>
     </div>
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>I'm currently work as a freelancer.</h3>
-      <p class="contact-message">If you have a project that you want to get started, think I can help you to fulfill your needs or love Maggie as much as I do, then get in touch!</p>
-      <a class="btn btn-outline-info" href="mailto:avicksaha17@gmail.com">CONTACT ME</a>
+    <div id="contact">
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Work as a freelancer</h3>
+        <p class="contact-message">If you have a project that you want to get started, think I can help you to fulfill your needs or love Maggie as much as I do, then get in touch!</p>
+        <a class="btn btn-outline-info" href="mailto:avicksaha17@gmail.com">CONTACT ME</a>
+      </div>
     </div>
   </div>
 
@@ -79,15 +88,17 @@
     <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
     <a class="footer-link" href="https://twitter.com/">Twitter</a>
     <a class="footer-link" href="https://www.instagram.com/avick_saha/">Instagram</a>
-    <p style="color: #EAF6F6; margin: 32px; font-size: 0.75rem;">© 2020 Avick Saha. All rights reserved.</p>
+    <a class="footer-link" href="">Credits</a>
+    <p style="color: #EAF6F6; margin: 16px; font-size: 0.65rem;">© 2020 Avick Saha. All rights reserved.</p>
   </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+
 </body>
 
 </html>
